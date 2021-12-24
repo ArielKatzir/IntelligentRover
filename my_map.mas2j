@@ -1,0 +1,25 @@
+MAS ia_submission {
+
+	infrastructure: Centralised
+	
+	environment:
+		
+		rover.RoverWorld(
+			"mas2j_file=my_map.mas2j", 
+			"scenario_file=scenarios/my_map/testingMap.json",
+			"discovery_type=none")
+
+	agents:
+		agent_scan2;
+//		agent_scanner;
+//		agent_collector1;
+//		agent_sc6_1;
+//		agent_random_scan [ capacity =0, scan_range=6, group=4];
+//		agent_random_scan2 [ capacity =0, scan_range=6, group=7];
+		
+//		agent_g_collector1 [ capacity =6, scan_range=0, group=3];//, mindinspector=""];
+//		agent_d_collector1 [ capacity =6, scan_range=0, group=1];//, mindinspector=""];
+
+	aslSourcePath:
+		"src/asl";
+}
